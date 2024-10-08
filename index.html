@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Mount Paradise</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- media query for mobile devices -->
+
+  <style>
+   html, body {
+    overflow-x: hidden;
+}
+    /* custom css for green underline */
+    .custom-width {
+      width: 18rem;
+    }
+
+    .custom-height {
+      height: 0.25rem;
+    }
+
+    .bg-custom-green {
+      background-color: #32de84;
+    }
+
+    .custom-line {
+      width: auto;
+      height: 0.25rem;
+      background-color: white;
+    }
+
+    .offcanvas {
+      background-color: #006A4E;
+      opacity: 80%;
+    }
+
+    .navbar {
+      transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+      box-shadow: none;
+    }
+
+    .navbar.scrolled {
+      background-color: #006A4E !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hotel-mount-paradise {
+      width: 47rem;
+    }
+
+    .accomodation {
+      width: 24rem;
+    }
+
+    .awards {
+      width: 10rem;
+    }
+    .color-change{
+      color: white;
+    }
+    #home-page{
+      background-image: url('assets/Hotel Photos/cover1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    }
+    @media (max-width: 576px) {
+      .addmargin {
+        position: absolute;
+        bottom: 50px;
+        text-align: left;
+        margin-right: 10px;
+      }
+
+      .cover-addmargin {
+        background-position: right;
+      }
+
+      .display-1 {
+        font-size: 2.5rem;
+      }
+
+      .hotel-mount-paradise {
+        width: 20rem;
+      }
+
+      .accomodation {
+        width: 16rem;
+      }
+
+      .awards {
+        width: 7rem;
+      }
+      .color-change{
+        color: rgb(255, 255, 255);
+      }
+      #home-page{
+        background-image: url('assets/Hotel Photos/cover4.jpg');
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- MAIN HOME PAGE -->
+  <div id="home-page" class="cover-addmargin " >
+    &nbsp;
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <!-- Hotel Logo -->
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" height="65" alt="Hotel Logo"></a>
+        <a class="navbar-brand" href="https://www.airbnb.co.uk/users/show/13759279"><img src="assets/superhost.png" height="43" width="90 alt="Airbnb Superhost"></a>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title fw-bold text-white" id="offcanvasNavbar2Label">Dash-Board</h1>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fw-bold my-2" aria-current="page" href="#home-page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fw-bold my-2" href="https://www.mohandas.com.np/">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fw-bold my-2" aria-current="page" href="#third-page">Accommodation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fw-bold my-2" aria-current="page" href="#fourth-page">Booking Partners</a>
+              </li>
+            </ul>
+            <a href="#fifth-page"><button class="btn btn-success mx-3 fw-bold my-2" type="submit">Contact
+                Us</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAV BAR -->
+
+    <!-- Cover Landing Page -->
+    <div class="container" style="margin-top: 90px;">
+      <div class="row addmargin">
+        <div class="col-md-12"><br><br><br><br><br><br><br><br><br><br>
+          <h3 class="display-4 fw-bold text-align-right color-change">Welcome to <br><span style="color: #32de84;">Hotel
+            </span><br><span style="color: #32de84;">Mount Paradise</span></h3>
+          <p class="text-white fw-bold" style="font-size: 24px;">100% Vegetarian, Vegan Friendly Hotel <br>in the heart of Nagarkot</p>
+          <!-- <a href="#third-page"><button class="btn btn-success">Explore Rooms</button></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beginning Of Second page with Picture Carousel -->
+  <div id="second-page" class="container-fluid" style="margin-top: 4rem;">
+    <div class="container text-center mb-4">
+      <p class="text-secondary"><strong>Get To Know More</strong></p>
+      <h1 class="display-5 fw-bold" style="color: #32de84;">Hotel Mount Paradise-Nagarkot </h1>
+      <div class="custom-width custom-height bg-custom-green mx-auto mt-2 hotel-mount-paradise"></div>
+    </div>
+    <div class="container-fluid" style="margin-top: 0;">
+      <div class="row align-items-center p-3">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <p class="text-secondary">
+            Hotel Mount Paradise is a budget-friendly, vegetarian, and vegan-friendly retreat located in the serene heart of Nagarkot, Nepal. Just 32 km from Tribhuvan International Airport, 20 km from the historic center of Bhaktapur, and 35 km from Thamel, it offers a peaceful escape from the chaotic city life. Surrounded by lush greeneries, where alarms are replaced by the gentle chirping of birds, it's an ideal spot for yoga, meditation, and digital detox. The hotel is close to the local market, bus stop, and popular hiking trails, making it perfect for long staycations with self-cooking options.
+          </p><br>
+          <p class="text-secondary">
+            Guests can explore a variety of nearby attractions that showcase the beauty and culture of Nagarkot. Visit the tranquil Buddha Peace Park, cross the scenic Rani Jhula, or experience the thrill of paragliding and ziplining. For nature lovers, hiking trails abound, offering stunning views of sunrise and sunset. Immerse yourself in the charm of local village life, where you can connect with the community and experience the peaceful simplicity of rural Nepal.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"
+            style="box-shadow: 0 0 10px rgba(9, 179, 150, 0.2);">
+            <div class="carousel-inner" style="border-radius: 15px;">
+              <div class="carousel-item active">
+                <img src="assets/Hotel Photos/carausel photos/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Hotel Photos/carausel photos/7.jpg" class="d-block w-100" alt="...">
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Second Page -->
+
+  <!-- Third page with information on types of room available -->
+  <div id="third-page" class="container-fluid" style="background-color: #eeeeee; margin-top: 3rem;">
+    <div class="container" style="margin-left: auto;margin-right: auto;">
+      <div class="text-center mb-4 p-3">
+        <p class="text-secondary" style="margin-top: 3rem;"><strong>We Offer</strong></p>
+        <h1 class="display-6 fw-bold" style="color: #32de84; ">ACCOMMODATION</h1>
+        <div class="custom-width custom-height bg-custom-green mx-auto mt-2 accomodation"></div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/family room.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Family room with balcony</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/standard twin room1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Standard twin room</h5>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/twin room with shared bathroom.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Twin room with shared bathroom</h5>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/basic tripple room with shared bath.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Basic tripple room with shared bathroom</h5>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/standard double room.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Standard double room</h5>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/Rooms/budget double room.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Budget single room</h5>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+  </div>
+  <!-- End of Third Page -->
+
+  <!-- Fourth Page - Awards Received -->
+  <div id="fourth-page" class="container-fluid" style="margin-top: 3rem; height: auto;">
+    <div class="container text-center mb-4">
+      <p class="text-secondary"><strong>Book with us</strong></p>
+      <h1 class="display-5 fw-bold" style="color: #32de84;">OUR BOOKING PARTNERS</h1>
+      <div class="custom-width custom-height bg-custom-green mx-auto mt-2 awards"></div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-6 g-4">
+        <!-- Card items -->
+        <div class="col">
+          <a href="https://www.booking.com/hotel/np/mount-paradise.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCDm1vdW50LXBhcmFkaXNlSDNYA2irAYgBAZgBCbgBF8gBDNgBA-gBAYgCAagCA7gC9tD5twbAAgHSAiQ2ZjgwOTY4Ny01Zjk3LTRhNTctOGQxYi05MDBjMjE2YzE3NTbYAgTgAgE&sid=980ee4218fd5f111fc61262defc1b0a2&dist=0&keep_landing=1&sb_price_type=total&type=total&" target="_blank" style="text-decoration: none;">
+          <div class="card h-100" style="cursor: pointer;">
+            <img src="assets/awards/booking.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Booking</h5>
+             
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- More card items -->
+        <div class="col">
+          <a href="https://www.agoda.com/hotel-mount-paradise/hotel/nagarkot-np.html?cid=1844104&ds=EIWxT3%2FY8w5wVBi9" target="_blank" style="text-decoration: none;">
+          <div class="card h-100" style="cursor: pointer;">
+            <img src="assets/awards/agoda.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Agoda</h5>
+             
+            </div>
+          </div>
+          </a>  
+        </div>
+        <div class="col">
+          <a href="https://www.tripadvisor.com/Hotel_Review-g315763-d6508731-Reviews-Hotel_Mount_Paradise-Nagarkot_Bagmati_Zone_Central_Region.html" target="_blank" style="text-decoration: none;">
+          <div class="card h-100" style="cursor: pointer;">
+            <img src="assets/awards/tripadvisor.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Tripadvisor</h5>
+             
+            </div>
+          </div>
+          </a>  
+        </div>
+
+        <div class="col">
+          <a href="https://www.expedia.com/Nagarkot-Hotels-Hotel-Mount-Paradise.h9126348.Hotel-Information?recommendations-overlay=recommendations-overlay" target="_blank" style="text-decoration: none;">
+            <div class="card h-100" style="cursor: pointer;">
+              <img src="assets/awards/expedia.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color: #2aa364;">Expedia</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a href="https://www.hostelworld.com/pwa/wds/hosteldetails.php/Hotel-Mount-Paradise/Nagarkot/85748?from=2024-10-07&to=2024-10-10&guests=2&origin=microsite" target="_blank" style="text-decoration: none;">
+          <div class="card h-100" style="cursor: pointer;">
+            <img src="assets/awards/hostelworld.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Hostelworld</h5>
+             
+            </div>
+          </div>
+          </a>  
+        </div>
+        <div class="col">
+          <a href="https://www.airbnb.co.uk/rooms/2687752?source_impression_id=p3_1728113069_P3wLxftHxilFrZ7n" target="_blank" style="text-decoration: none;">
+          <div class="card h-100" style="cursor: pointer;">
+            <img src="assets/awards/airbnb.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #2aa364;">Airbnb</h5>
+             
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <!-- End of Fourth Page -->
+
+  <!-- Fifth Page - Location and Contact Details -->
+  <div id="fifth-page" class="d-flex flex-column flex-md-row bg-light p-4">
+    <!-- Content on the left -->
+    <div class=" text-white p-4 col-md-4" style="background-color:#006A4E;">
+      <p class="h1 mb-4 fw-bold" style="font-size: 25px;">GETTING HERE</p>
+      <div class="custom-line "></div><br>
+      <p class="mb-1 fw-bold " style="font-size: 30px;">Hotel Mount Paradise</p>
+      <p class="mb-2" style="font-size: 20px;"> Nagarkot ,windy Hill Near Army combat college, 44812</p>
+      <p class="mb-2"style="font-size: 20px;"> Bhaktapur, Nepal</p><br>
+      <p class="mb-2"style="font-size: 20px;">Mobile Number: +977-9818681791 <br>Landline: +977-1-6680007</p><br>
+      <p class="mb-4"style="font-size: 20px;">hotelmountparadise@gmail.com</p>
+      <div class="d-flex mt-2">
+        <a href="https://wa.link/17jon1" aria-label="Whatsapp" class="text-muted mx-2">
+          <i class="bi bi-whatsapp" style="color: white; font-size: 24px;"></i>
+        </a>
+        <a href="https://www.instagram.com/hotel_mountparadise/" aria-label="Instagram" class="text-muted mx-2">
+          <i class="bi bi-instagram light" style="color: white;font-size: 24px;"></i>
+        </a>
+        <a href="https://www.facebook.com/HotelMountParadise/" aria-label="Facebook" class="text-muted mx-2">
+          <i class="bi bi-facebook" style="color: white;font-size: 24px;"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Map on the right -->
+    <div class="col-md-8">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1504165354495!2d85.51819057465784!3d27.712641725259356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb068005edb695%3A0x1c92496767d4e5ff!2sHotel%20Mount%20Paradise!5e0!3m2!1sen!2snp!4v1727952336571!5m2!1sen!2snp" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!-- End of Fifth Page -->
+
+  <!-- Footer -->
+  <div class=" text-white p-4" style="background-color: #006A4E; position: relative;">
+    <div class="text-center mb-4" style="font-size: 18px;">
+      
+        <p class="medium">NAGARKOT, BHAKTAPUR, NEPAL</p>
+        <p class="medium">977-9818681791 +977 1-6680007 <br>hotelmountparadise@gmail.com</p>
+      
+    </div>
+    <div class="text-center mb-4">
+      <h2 class="h5 font-serif font-weight-semibold"><strong>JOIN THE CONVERSATION</strong></h2>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="https://wa.link/17jon1" aria-label="Whatsapp" class="text-muted mx-2">
+          <i class="bi bi-whatsapp" style="color: white;font-size: 24px;"></i>
+        </a>
+        <a href="https://www.instagram.com/hotel_mountparadise/" aria-label="Instagram" class="text-muted mx-2">
+          <i class="bi bi-instagram light" style="color: white;font-size: 24px;"></i>
+        </a>
+        <a href="https://www.facebook.com/HotelMountParadise/" aria-label="Facebook" class="text-muted mx-2">
+          <i class="bi bi-facebook" style="color: white;font-size: 24px;"></i>
+        </a>
+      </div>
+    </div>
+    <div style="margin:0;height: 1px;background-color:white;"></div>
+    <div class="text-center mt-4 text-white-50 small">
+      <p>&copy; 2024 Hotel Mount Paradise. All Rights Reserved.</p>
+    </div>
+  </div>
+
+
+  <!-- End of Footer -->
+
+  <!-- script for loading bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- script for automatically closing the nav bar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var offcanvasElement = document.getElementById('offcanvasNavbar2');
+      var offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+      document.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default anchor click behavior
+          var targetId = this.getAttribute('href');
+
+          offcanvas.hide(); // Hide the offcanvas menu
+
+          // Wait for the offcanvas to hide before navigating
+          setTimeout(function () {
+            if (targetId.startsWith('#')) {
+              // Smooth scroll to the section
+              document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            } else {
+              // If it's an external link, redirect to the link
+              window.location.href = targetId;
+            }
+          }, 500); // Adjust timeout as needed
+        });
+      });
+    });
+  </script>
+  <!-- script for smooth animation of navbar when it goes to pages other than homepage -->
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.getElementById('navbar');
+      var homePageHeight = document.getElementById('home-page').offsetHeight;
+
+      if (window.scrollY > homePageHeight) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>
